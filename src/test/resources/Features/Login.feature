@@ -1,4 +1,4 @@
-Feature: Auto and General Insurance
+Feature: Login Feature
 
   Scenario Outline: As a user, i want to login to the A&G Website
     Given Iam on the A&G Website

@@ -5,14 +5,16 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = "src/test/resources/Features/Login.feature",
+        features = {"src/test/resources/Features/Login.feature",
+                "src/test/resources/Features/Documents.feature"
+        },
         glue = {"Steps"},
         plugin = {"pretty", "html:Reports/cucumber-reports.html", "json:target/cucumber.json",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 
 
         monochrome = true,
-//        tags = "@AddUser",
+        //tags = "@Login",
         publish = true
 )
 
