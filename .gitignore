@@ -12,6 +12,7 @@ target/
 *.iml
 *.ipr
 Reports/
+Screenshots/
 
 ### Eclipse ###
 .apt_generated

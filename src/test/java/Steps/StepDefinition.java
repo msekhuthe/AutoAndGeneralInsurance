@@ -1,5 +1,6 @@
 package Steps;
 
+import Utils.TakeScreenShots;
 import io.cucumber.java.en.*;
 
 
@@ -48,8 +49,10 @@ public class StepDefinition extends Base {
 
     @Then("I am redirected to the A&G Dashboard")
     public void i_am_redirected_to_the_a_g_dashboard() {
+        takeScreenShots.takesSnapShot(driver, "Dashboard");
         loginpage.VerifyDashboardPage();
     }
+
 
     //-------------------------DOCUMENTS STEPS-----------------------------------
     @Given("I am on the Documents Layout Page")

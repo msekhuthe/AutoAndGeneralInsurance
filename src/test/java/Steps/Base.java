@@ -3,6 +3,7 @@ package Steps;
 import Pages.DocumentsPage;
 import Pages.LoginPage;
 import Utils.BrowserFactory;
+import Utils.TakeScreenShots;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -13,5 +14,7 @@ public class Base {
 
     LoginPage loginpage = PageFactory.initElements(driver, LoginPage.class);
     DocumentsPage documentsPage = PageFactory.initElements(driver, DocumentsPage.class);
+
+    TakeScreenShots takeScreenShots = new TakeScreenShots();
 
 }
